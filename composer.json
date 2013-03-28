@@ -1,5 +1,5 @@
 {
-    "name": "oleksiiostapets/gridqsearch",
+    "name": "alexeyostapets/gridqsearch",
     "type": "library",
     "description": "Quick search panek for Grid in Agile Toolkit",
     "homepage": "https://github.com/alexeyostapets/gridqsearch",
@@ -14,5 +14,8 @@
     "require": {
         "atk4/atk4": ">=4.2.5",
         "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-0": { "alexeyostapets\\gridqsearch": "lib" }
     }
 }
