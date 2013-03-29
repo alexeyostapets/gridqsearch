@@ -11,6 +11,9 @@ class Lister_QSearch extends \CompleteLister {
         parent::formatRow();
         
         $v=$this->add('View','search_'.$this->current_row['id'],'name')->set($this->current_row['name']);
+        if ($this->current_row['name']=="clear"){
+            $v->addClass('clear_filter');
+        }
         $v->addStyle('cursor','pointer');
         
         if ($this->api->recall($this->owner->name.'_filter')==strtoupper($this->current_row['name'])){
